@@ -1,5 +1,5 @@
 # Game Decrypt - 4.05
-PayLoad ported by WildCard for decrypt games on PS4 4.05.
+PayLoad ported by WildCard and adapted by me to decrypt games on PS4
 
 # Pre-Requisites:
 1. A computer. 
