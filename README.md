@@ -1,6 +1,8 @@
 # Game Decrypt - 4.05
 PayLoad ported by WildCard and adapted by me to decrypt games on PS4
 
+Note: I am not the creator of PayLoad, I modified the files that it decrypts. The creator of the PayLoad is WildCard.
+
 # Pre-Requisites:
 1. A computer. 
 2. A PS4 in version 4.05.
