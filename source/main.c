@@ -17,6 +17,8 @@
 
 // Defines
 
+#define GAMECODE "CUSA00000" //define game code under "s
+
 #define IP(a, b, c, d) (((a) << 0) + ((b) << 8) + ((c) << 16) + ((d) << 24))
 
 #define	CTL_KERN	1	/* "high kernel": proc, limits */
@@ -474,22 +476,22 @@ int _main(struct thread *td){
 	// decrypt
 	printfsocket("decrypting\n");
 
-	decrypt_and_dump_self("/mnt/sandbox/pfsmnt/CUSA00000-app0/eboot.bin", "/mnt/usb0/eboot.bin");
-	decrypt_and_dump_self("/mnt/sandbox/pfsmnt/CUSA00000-app0/sce_module/libc.prx", "/mnt/usb0/libc.prx");
-	decrypt_and_dump_self("/mnt/sandbox/pfsmnt/CUSA00000-app0/sce_module/libSceAudioLatencyEstimation.prx", "/mnt/usb0/libSceAudioLatencyEstimation.prx");
-	decrypt_and_dump_self("/mnt/sandbox/pfsmnt/CUSA00000-app0/sce_module/libSceFace.prx", "/mnt/usb0/libSceFace.prx");
-	decrypt_and_dump_self("/mnt/sandbox/pfsmnt/CUSA00000-app0/sce_module/libSceFaceTracker.prx", "/mnt/usb0/libSceFaceTracker.prx");
-	decrypt_and_dump_self("/mnt/sandbox/pfsmnt/CUSA00000-app0/sce_module/libSceFios2.prx", "/mnt/usb0/libSceFios2.prx");
-	decrypt_and_dump_self("/mnt/sandbox/pfsmnt/CUSA00000-app0/sce_module/libSceFios2_debug.prx", "/mnt/usb0/libSceFios2_debug.prx");
-	decrypt_and_dump_self("/mnt/sandbox/pfsmnt/CUSA00000-app0/sce_module/libSceHand.prx", "/mnt/usb0/libSceHand.prx");
-	decrypt_and_dump_self("/mnt/sandbox/pfsmnt/CUSA00000-app0/sce_module/libSceHandTracker.prx", "/mnt/usb0/libSceHandTracker.prx");
-	decrypt_and_dump_self("/mnt/sandbox/pfsmnt/CUSA00000-app0/sce_module/libSceHeadTracker.prx", "/mnt/usb0/libSceHeadTracker.prx");
-	decrypt_and_dump_self("/mnt/sandbox/pfsmnt/CUSA00000-app0/sce_module/libSceJobManager.prx", "/mnt/usb0/libSceJobManager.prx");
-	decrypt_and_dump_self("/mnt/sandbox/pfsmnt/CUSA00000-app0/sce_module/libSceJobManager_debug.prx", "/mnt/usb0/libSceJobManager_debug.prx");
-	decrypt_and_dump_self("/mnt/sandbox/pfsmnt/CUSA00000-app0/sce_module/libSceNpToolkit2.prx", "/mnt/usb0/libSceNpToolkit2.prx");
-	decrypt_and_dump_self("/mnt/sandbox/pfsmnt/CUSA00000-app0/sce_module/libSceS3DConversion.prx", "/mnt/usb0/libSceS3DConversion.prx");
-	decrypt_and_dump_self("/mnt/sandbox/pfsmnt/CUSA00000-app0/sce_module/libSceSmart.prx", "/mnt/usb0/libSceSmart.prx");
-	decrypt_and_dump_self("/mnt/sandbox/pfsmnt/CUSA00000-app0/sce_sys/about/right.sprx", "/mnt/usb0/right.sprx");
+	decrypt_and_dump_self("/mnt/sandbox/pfsmnt/"GAMECODE"-app0/eboot.bin", "/mnt/usb0/eboot.bin");
+	decrypt_and_dump_self("/mnt/sandbox/pfsmnt/"GAMECODE"-app0/sce_module/libc.prx", "/mnt/usb0/libc.prx");
+	decrypt_and_dump_self("/mnt/sandbox/pfsmnt/"GAMECODE"-app0/sce_module/libSceAudioLatencyEstimation.prx", "/mnt/usb0/libSceAudioLatencyEstimation.prx");
+	decrypt_and_dump_self("/mnt/sandbox/pfsmnt/"GAMECODE"-app0/sce_module/libSceFace.prx", "/mnt/usb0/libSceFace.prx");
+	decrypt_and_dump_self("/mnt/sandbox/pfsmnt/"GAMECODE"-app0/sce_module/libSceFaceTracker.prx", "/mnt/usb0/libSceFaceTracker.prx");
+	decrypt_and_dump_self("/mnt/sandbox/pfsmnt/"GAMECODE"-app0/sce_module/libSceFios2.prx", "/mnt/usb0/libSceFios2.prx");
+	decrypt_and_dump_self("/mnt/sandbox/pfsmnt/"GAMECODE"-app0/sce_module/libSceFios2_debug.prx", "/mnt/usb0/libSceFios2_debug.prx");
+	decrypt_and_dump_self("/mnt/sandbox/pfsmnt/"GAMECODE"-app0/sce_module/libSceHand.prx", "/mnt/usb0/libSceHand.prx");
+	decrypt_and_dump_self("/mnt/sandbox/pfsmnt/"GAMECODE"-app0/sce_module/libSceHandTracker.prx", "/mnt/usb0/libSceHandTracker.prx");
+	decrypt_and_dump_self("/mnt/sandbox/pfsmnt/"GAMECODE"-app0/sce_module/libSceHeadTracker.prx", "/mnt/usb0/libSceHeadTracker.prx");
+	decrypt_and_dump_self("/mnt/sandbox/pfsmnt/"GAMECODE"-app0/sce_module/libSceJobManager.prx", "/mnt/usb0/libSceJobManager.prx");
+	decrypt_and_dump_self("/mnt/sandbox/pfsmnt/"GAMECODE"-app0/sce_module/libSceJobManager_debug.prx", "/mnt/usb0/libSceJobManager_debug.prx");
+	decrypt_and_dump_self("/mnt/sandbox/pfsmnt/"GAMECODE"-app0/sce_module/libSceNpToolkit2.prx", "/mnt/usb0/libSceNpToolkit2.prx");
+	decrypt_and_dump_self("/mnt/sandbox/pfsmnt/"GAMECODE"-app0/sce_module/libSceS3DConversion.prx", "/mnt/usb0/libSceS3DConversion.prx");
+	decrypt_and_dump_self("/mnt/sandbox/pfsmnt/"GAMECODE"-app0/sce_module/libSceSmart.prx", "/mnt/usb0/libSceSmart.prx");
+	decrypt_and_dump_self("/mnt/sandbox/pfsmnt/"GAMECODE"-app0/sce_sys/about/right.sprx", "/mnt/usb0/right.sprx");
 
 	// dont forget to close the socket
 	sceNetSocketClose(sock);
